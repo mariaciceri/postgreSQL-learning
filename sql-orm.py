@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 
 #executing the instructions from the database
 db = create_engine('postgresql:///postgres')# /// means local host and postgres is the database name
-base = declarative_base(); #take the metadata and creates a subclass to map everything
+base = declarative_base() #take the metadata and creates a subclass to map everything
 
 class Artist(base):
     __tablename__ = "Artist"
